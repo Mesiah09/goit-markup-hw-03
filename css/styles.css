@@ -28,7 +28,7 @@ p {
 .container {
   margin-left: auto;
   margin-right: auto;
-  height: ;
+  width: 1200px;
 }
 
 .header {
@@ -78,8 +78,10 @@ p {
 
 .nav {
   align-items: center;
-  padding-left: 215px;
-  padding-right: 215px;
+}
+
+.nav .container {
+  height: 80px;
 }
 
 .nav-item:not(:last-child) {
@@ -178,7 +180,12 @@ p {
 
 .tasks-title {
   margin-bottom: 50px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
   text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .tasks {
@@ -198,6 +205,15 @@ p {
   margin-bottom: 50px;
   text-align: center;
   padding-top: 94px;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: #f5f4fa;
 }
 
 .teammembers {
