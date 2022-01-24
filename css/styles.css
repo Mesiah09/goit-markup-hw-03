@@ -119,7 +119,7 @@ body {
   color: var(--accent-color);
 }
 
-/* Contacts */
+/* --Contacts-- */
 .contacts.list {
   display: flex;
   align-items: center;
