@@ -203,7 +203,7 @@ body {
 /* Advantages */
 .advantages {
   padding-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages > .container > .list {
@@ -235,7 +235,7 @@ body {
 
 /* What are we doing */
 .work {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .work .title {
@@ -256,6 +256,7 @@ body {
 }
 
 /* Team  */
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -278,10 +279,16 @@ body {
 
 .teammember {
   background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
-.teammember > .title {
-  padding-top: 30px;
+.teammember .container {
+  width: auto;
+}
+
+.teammember .container > .title {
   margin: 0;
   margin-bottom: 10px;
 
@@ -290,8 +297,7 @@ body {
   line-height: 1.19;
 }
 
-.teammember > .text {
-  padding-bottom: 30px;
+.teammember .container > .text {
   margin: 0;
 
   font-size: 16px;
@@ -301,6 +307,11 @@ body {
 
 .teammember > img {
   display: block;
+}
+
+.teammember > .container {
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 /* Footer  */
@@ -324,6 +335,23 @@ body {
 .address {
   color: var(--address-color);
   font-style: normal;
+}
+
+.map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: var(--address-color);
+
+  display: block;
+  margin-top: 20px;
+}
+
+.map:hover,
+.map:focus {
+  color: var(--accent-color);
 }
 
 .address .link {
@@ -380,7 +408,7 @@ body {
 }
 
 /* Portfolio items  */
-.portfolitem {
+.portfolio-item {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
@@ -397,6 +425,14 @@ body {
   text-align: start;
 }
 
+.portfolio-item .container {
+  width: auto;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+
 .portfolio-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
 }
@@ -409,18 +445,7 @@ body {
   display: block;
 }
 
-.portfolio-item > .link {
-  color: inherit;
-}
-
 .portfolio-item p {
   display: inline-block;
   margin: 0;
-}
-
-.info {
-  padding: 20px 24px;
-  border-right: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
 }
