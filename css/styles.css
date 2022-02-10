@@ -92,6 +92,7 @@ img {
   line-height: 1.19;
   color: var(--accent-color);
   letter-spacing: 0.03em;
+  margin-right: 94px;
 }
 
 .logo-header {
@@ -110,9 +111,12 @@ img {
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 80px;
+}
+
+.header-contacts {
+  margin-left: auto;
 }
 
 .nav {
@@ -352,6 +356,9 @@ img {
 .buttons-list {
   display: flex;
   justify-content: center;
+}
+
+.buttons-container {
   margin-bottom: 50px;
 }
 
